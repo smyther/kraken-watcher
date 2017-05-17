@@ -7,10 +7,10 @@ check out the repo.
 
 edit index.js with your API details from Kraken.
 
-```npm install && npm run```
+```npm install && npm start```
 
 OR
 
-```yarn && npm run```
+```yarn && npm start```
 
 Your choice.
