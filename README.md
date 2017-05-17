@@ -1,7 +1,7 @@
 # kraken-watcher
 watch your kraken shiz
 
-##install & run
+## install & run
 
 check out the repo.
 
