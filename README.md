@@ -9,4 +9,8 @@ edit index.js with your API details from Kraken.
 
 ```npm install && npm run```
 
-Win.
+OR
+
+```yarn && npm run```
+
+Your choice.
