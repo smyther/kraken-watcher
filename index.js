@@ -7,8 +7,8 @@ import clear from 'clear';
 import sleep from 'sleep';
 let btcVal, gbpVal;
 
-const key = "YOUR KEY HERE";
-const secret = "YOUR SECRET HERE";
+const key = 'YOURS';
+const secret = 'YOURS';
 const kraken = new KrakenClient(key, secret);
 
 function krakenWatch(){
@@ -109,9 +109,9 @@ function krakenWatch(){
 							// last price
 							let color = 'white';
 
-							if (parseFloat(this.previousPrices[e]) > parseFloat(curr.c[0])){
+							if (parseFloat(this.previousPrices[e]) < parseFloat(curr.c[0])){
 								color = 'bgGreen';
-							} else if (parseFloat(this.previousPrices[e]) < parseFloat(curr.c[0])){
+							} else if (parseFloat(this.previousPrices[e]) > parseFloat(curr.c[0])){
 								color = 'bgRed';
 							}
 
@@ -142,7 +142,7 @@ function krakenWatch(){
 
 						clear();
 
-						console.log('Last Update: ' + new Date());
+						// console.log('Last Update: ' + new Date());
 						console.log(table.toString());
 
 						resolve();
